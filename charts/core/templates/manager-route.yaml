@@ -19,5 +19,5 @@ spec:
   port:
     targetPort: manager
   tls:
-    termination: passthrough
+    termination: {{ .Values.manager.route.termination }}
 {{- end }}
